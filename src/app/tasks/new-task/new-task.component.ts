@@ -1,12 +1,10 @@
 import { Component, EventEmitter, inject, Input, Output, output, signal } from "@angular/core";
-import { FormsModule } from "@angular/forms";
 import { type NewTaskData } from "../task/task.model";
 import { TasksService } from "../../services/tasks.service";
 
 @Component({
   selector: 'app-new-task',
   templateUrl: './new-task.component.html',
-  imports: [FormsModule],
   styleUrl: './new-task.component.scss'
 })
 export class NewTaskComponent {
